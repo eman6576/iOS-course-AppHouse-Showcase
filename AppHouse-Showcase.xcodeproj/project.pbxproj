@@ -20,9 +20,15 @@
 		886A57AF1CA07CA900B331DB /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886A57AB1CA07CA900B331DB /* NotoSans-Regular.ttf */; };
 		886A57B31CA07F0D00B331DB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B21CA07F0D00B331DB /* MaterialView.swift */; };
 		886A57B61CA0800000B331DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B51CA0800000B331DB /* Constants.swift */; };
+		88FC244B1CA0EFD8005F7F62 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC24481CA0EFD8005F7F62 /* Bolts.framework */; };
+		88FC244C1CA0EFD8005F7F62 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC24491CA0EFD8005F7F62 /* FBSDKCoreKit.framework */; };
+		88FC244D1CA0EFD8005F7F62 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC244A1CA0EFD8005F7F62 /* FBSDKLoginKit.framework */; };
+		970D785877B6C2A5F0381DE2 /* Pods_AppHouse_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47424DAA556EB8BA800D02AD /* Pods_AppHouse_Showcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		164B41D030A7F324600713DA /* Pods-AppHouse-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHouse-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppHouse-Showcase/Pods-AppHouse-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		47424DAA556EB8BA800D02AD /* Pods_AppHouse_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppHouse_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		886A578F1CA07C5900B331DB /* AppHouse-Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppHouse-Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +44,10 @@
 		886A57AB1CA07CA900B331DB /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		886A57B21CA07F0D00B331DB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		886A57B51CA0800000B331DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88FC24481CA0EFD8005F7F62 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		88FC24491CA0EFD8005F7F62 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		88FC244A1CA0EFD8005F7F62 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		9DBA9E913D61A7B93F613108 /* Pods-AppHouse-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppHouse-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppHouse-Showcase/Pods-AppHouse-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FC244B1CA0EFD8005F7F62 /* Bolts.framework in Frameworks */,
+				88FC244C1CA0EFD8005F7F62 /* FBSDKCoreKit.framework in Frameworks */,
+				88FC244D1CA0EFD8005F7F62 /* FBSDKLoginKit.framework in Frameworks */,
+				970D785877B6C2A5F0381DE2 /* Pods_AppHouse_Showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 			children = (
 				886A57911CA07C5900B331DB /* AppHouse-Showcase */,
 				886A57901CA07C5900B331DB /* Products */,
+				A1ECE1DECA584A226CDC52D4 /* Pods */,
+				E84FB7A00D2BF098B3A55CEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,7 @@
 		886A57911CA07C5900B331DB /* AppHouse-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				88FC24471CA0EFC9005F7F62 /* Frameworks */,
 				886A57B11CA07D0800B331DB /* Utilities */,
 				886A57B01CA07D0000B331DB /* Storyboards */,
 				886A57A71CA07C7F00B331DB /* Resources */,
@@ -77,7 +94,6 @@
 				886A57A51CA07C7300B331DB /* View */,
 				886A57A41CA07C6D00B331DB /* Controller */,
 				886A57921CA07C5900B331DB /* AppDelegate.swift */,
-				886A57941CA07C5900B331DB /* ViewController.swift */,
 				886A57991CA07C5900B331DB /* Assets.xcassets */,
 				886A579E1CA07C5900B331DB /* Info.plist */,
 			);
@@ -87,6 +103,7 @@
 		886A57A41CA07C6D00B331DB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				886A57941CA07C5900B331DB /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -136,6 +153,33 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		88FC24471CA0EFC9005F7F62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88FC24481CA0EFD8005F7F62 /* Bolts.framework */,
+				88FC24491CA0EFD8005F7F62 /* FBSDKCoreKit.framework */,
+				88FC244A1CA0EFD8005F7F62 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1ECE1DECA584A226CDC52D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				164B41D030A7F324600713DA /* Pods-AppHouse-Showcase.debug.xcconfig */,
+				9DBA9E913D61A7B93F613108 /* Pods-AppHouse-Showcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E84FB7A00D2BF098B3A55CEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47424DAA556EB8BA800D02AD /* Pods_AppHouse_Showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 886A57A11CA07C5900B331DB /* Build configuration list for PBXNativeTarget "AppHouse-Showcase" */;
 			buildPhases = (
+				047C97F982A3AC547CACCBF2 /* Check Pods Manifest.lock */,
 				886A578B1CA07C5900B331DB /* Sources */,
 				886A578C1CA07C5900B331DB /* Frameworks */,
 				886A578D1CA07C5900B331DB /* Resources */,
+				3E7C56BAF703DD54FE5745C9 /* Embed Pods Frameworks */,
+				9E6A2BAFBDD6DB7188498647 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +253,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047C97F982A3AC547CACCBF2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E7C56BAF703DD54FE5745C9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppHouse-Showcase/Pods-AppHouse-Showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6A2BAFBDD6DB7188498647 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppHouse-Showcase/Pods-AppHouse-Showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		886A578B1CA07C5900B331DB /* Sources */ = {
@@ -328,8 +423,14 @@
 		};
 		886A57A21CA07C5900B331DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164B41D030A7F324600713DA /* Pods-AppHouse-Showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppHouse-Showcase",
+				);
 				INFOPLIST_FILE = "AppHouse-Showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.projectomicron.AppHouse-Showcase";
@@ -339,8 +440,14 @@
 		};
 		886A57A31CA07C5900B331DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DBA9E913D61A7B93F613108 /* Pods-AppHouse-Showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppHouse-Showcase",
+				);
 				INFOPLIST_FILE = "AppHouse-Showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.projectomicron.AppHouse-Showcase";
