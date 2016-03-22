@@ -21,6 +21,8 @@
 		886A57B31CA07F0D00B331DB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B21CA07F0D00B331DB /* MaterialView.swift */; };
 		886A57B61CA0800000B331DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B51CA0800000B331DB /* Constants.swift */; };
 		887C5B3C1CA0FE4B0084B15F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887C5B3B1CA0FE4B0084B15F /* DataService.swift */; };
+		88FBC8601CA1CB9D00135A26 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBC85F1CA1CB9D00135A26 /* FeedViewController.swift */; };
+		88FBC8621CA1CC6900135A26 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBC8611CA1CC6900135A26 /* PostCell.swift */; };
 		88FC244B1CA0EFD8005F7F62 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC24481CA0EFD8005F7F62 /* Bolts.framework */; };
 		88FC244C1CA0EFD8005F7F62 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC24491CA0EFD8005F7F62 /* FBSDKCoreKit.framework */; };
 		88FC244D1CA0EFD8005F7F62 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FC244A1CA0EFD8005F7F62 /* FBSDKLoginKit.framework */; };
@@ -46,6 +48,8 @@
 		886A57B21CA07F0D00B331DB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		886A57B51CA0800000B331DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		887C5B3B1CA0FE4B0084B15F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		88FBC85F1CA1CB9D00135A26 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		88FBC8611CA1CC6900135A26 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		88FC24481CA0EFD8005F7F62 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		88FC24491CA0EFD8005F7F62 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		88FC244A1CA0EFD8005F7F62 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				886A57941CA07C5900B331DB /* ViewController.swift */,
+				88FBC85F1CA1CB9D00135A26 /* FeedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				886A57B21CA07F0D00B331DB /* MaterialView.swift */,
 				8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */,
 				8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */,
+				88FBC8611CA1CC6900135A26 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -323,7 +329,9 @@
 				886A57B31CA07F0D00B331DB /* MaterialView.swift in Sources */,
 				886A57B61CA0800000B331DB /* Constants.swift in Sources */,
 				886A57951CA07C5900B331DB /* ViewController.swift in Sources */,
+				88FBC8621CA1CC6900135A26 /* PostCell.swift in Sources */,
 				886A57931CA07C5900B331DB /* AppDelegate.swift in Sources */,
+				88FBC8601CA1CB9D00135A26 /* FeedViewController.swift in Sources */,
 				8807CAD71CA0844200EAC9F2 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
