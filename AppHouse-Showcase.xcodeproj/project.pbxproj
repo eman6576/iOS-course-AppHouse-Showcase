@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8807CAD71CA0844200EAC9F2 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */; };
+		8807CAD91CA086CE00EAC9F2 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */; };
 		886A57931CA07C5900B331DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57921CA07C5900B331DB /* AppDelegate.swift */; };
 		886A57951CA07C5900B331DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57941CA07C5900B331DB /* ViewController.swift */; };
 		886A57981CA07C5900B331DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A57961CA07C5900B331DB /* Main.storyboard */; };
 		886A579A1CA07C5900B331DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886A57991CA07C5900B331DB /* Assets.xcassets */; };
 		886A579D1CA07C5900B331DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A579B1CA07C5900B331DB /* LaunchScreen.storyboard */; };
+		886A57AC1CA07CA900B331DB /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886A57A81CA07CA900B331DB /* NotoSans-Bold.ttf */; };
+		886A57AD1CA07CA900B331DB /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886A57A91CA07CA900B331DB /* NotoSans-BoldItalic.ttf */; };
+		886A57AE1CA07CA900B331DB /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886A57AA1CA07CA900B331DB /* NotoSans-Italic.ttf */; };
+		886A57AF1CA07CA900B331DB /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 886A57AB1CA07CA900B331DB /* NotoSans-Regular.ttf */; };
+		886A57B31CA07F0D00B331DB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B21CA07F0D00B331DB /* MaterialView.swift */; };
+		886A57B61CA0800000B331DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57B51CA0800000B331DB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		886A578F1CA07C5900B331DB /* AppHouse-Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppHouse-Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		886A57921CA07C5900B331DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886A57941CA07C5900B331DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,12 @@
 		886A57991CA07C5900B331DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886A579C1CA07C5900B331DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886A579E1CA07C5900B331DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		886A57A81CA07CA900B331DB /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		886A57A91CA07CA900B331DB /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		886A57AA1CA07CA900B331DB /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		886A57AB1CA07CA900B331DB /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		886A57B21CA07F0D00B331DB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		886A57B51CA0800000B331DB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,70 @@
 		886A57911CA07C5900B331DB /* AppHouse-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				886A57B11CA07D0800B331DB /* Utilities */,
+				886A57B01CA07D0000B331DB /* Storyboards */,
+				886A57A71CA07C7F00B331DB /* Resources */,
+				886A57A61CA07C7800B331DB /* Model */,
+				886A57A51CA07C7300B331DB /* View */,
+				886A57A41CA07C6D00B331DB /* Controller */,
 				886A57921CA07C5900B331DB /* AppDelegate.swift */,
 				886A57941CA07C5900B331DB /* ViewController.swift */,
-				886A57961CA07C5900B331DB /* Main.storyboard */,
 				886A57991CA07C5900B331DB /* Assets.xcassets */,
-				886A579B1CA07C5900B331DB /* LaunchScreen.storyboard */,
 				886A579E1CA07C5900B331DB /* Info.plist */,
 			);
 			path = "AppHouse-Showcase";
+			sourceTree = "<group>";
+		};
+		886A57A41CA07C6D00B331DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		886A57A51CA07C7300B331DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				886A57B21CA07F0D00B331DB /* MaterialView.swift */,
+				8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */,
+				8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		886A57A61CA07C7800B331DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		886A57A71CA07C7F00B331DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				886A57A81CA07CA900B331DB /* NotoSans-Bold.ttf */,
+				886A57A91CA07CA900B331DB /* NotoSans-BoldItalic.ttf */,
+				886A57AA1CA07CA900B331DB /* NotoSans-Italic.ttf */,
+				886A57AB1CA07CA900B331DB /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		886A57B01CA07D0000B331DB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				886A57961CA07C5900B331DB /* Main.storyboard */,
+				886A579B1CA07C5900B331DB /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		886A57B11CA07D0800B331DB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				886A57B51CA0800000B331DB /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +195,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886A57AC1CA07CA900B331DB /* NotoSans-Bold.ttf in Resources */,
 				886A579D1CA07C5900B331DB /* LaunchScreen.storyboard in Resources */,
+				886A57AD1CA07CA900B331DB /* NotoSans-BoldItalic.ttf in Resources */,
+				886A57AE1CA07CA900B331DB /* NotoSans-Italic.ttf in Resources */,
 				886A579A1CA07C5900B331DB /* Assets.xcassets in Resources */,
 				886A57981CA07C5900B331DB /* Main.storyboard in Resources */,
+				886A57AF1CA07CA900B331DB /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8807CAD91CA086CE00EAC9F2 /* MaterialTextField.swift in Sources */,
+				886A57B31CA07F0D00B331DB /* MaterialView.swift in Sources */,
+				886A57B61CA0800000B331DB /* Constants.swift in Sources */,
 				886A57951CA07C5900B331DB /* ViewController.swift in Sources */,
 				886A57931CA07C5900B331DB /* AppDelegate.swift in Sources */,
+				8807CAD71CA0844200EAC9F2 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +367,7 @@
 				886A57A31CA07C5900B331DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
