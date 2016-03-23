@@ -41,6 +41,10 @@ class ViewController: UIViewController {
                         print("Login failed. \(error)")
                     } else {
                         print("Logged In!\(authData)")
+                        
+                        let user = ["provider": authData.provider!, "blah": "test"]
+                        DataService.dataService.createFireBaseUser(authData.uid, user: user)
+                        
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
@@ -62,7 +66,12 @@ class ViewController: UIViewController {
                                 self.showErrorAlert("Could not create account", message: "Problem creating account. Try something else")
                             } else {
                                 NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                DataService.dataService.REF_BASE.authUser(email, password: password, withCompletionBlock: nil)
+                                
+                                DataService.dataService.REF_BASE.authUser(email, password: password, withCompletionBlock: {err, authData in
+                                    let user = ["provider": authData.provider!, "blah": "emailtest"]
+                                    DataService.dataService.createFireBaseUser(authData.uid, user: user)
+                                })
+                                
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
                         })
