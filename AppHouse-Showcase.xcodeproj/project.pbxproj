@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8807CAD71CA0844200EAC9F2 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */; };
 		8807CAD91CA086CE00EAC9F2 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */; };
+		88083BFF1CA4DEE200FCB6D5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88083BFE1CA4DEE200FCB6D5 /* Post.swift */; };
 		886A57931CA07C5900B331DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57921CA07C5900B331DB /* AppDelegate.swift */; };
 		886A57951CA07C5900B331DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886A57941CA07C5900B331DB /* ViewController.swift */; };
 		886A57981CA07C5900B331DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886A57961CA07C5900B331DB /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		47424DAA556EB8BA800D02AD /* Pods_AppHouse_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppHouse_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8807CAD61CA0844200EAC9F2 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		8807CAD81CA086CE00EAC9F2 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		88083BFE1CA4DEE200FCB6D5 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		886A578F1CA07C5900B331DB /* AppHouse-Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppHouse-Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		886A57921CA07C5900B331DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		886A57941CA07C5900B331DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		886A57A61CA07C7800B331DB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				88083BFE1CA4DEE200FCB6D5 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				886A57931CA07C5900B331DB /* AppDelegate.swift in Sources */,
 				88FBC8601CA1CB9D00135A26 /* FeedViewController.swift in Sources */,
 				8807CAD71CA0844200EAC9F2 /* MaterialButton.swift in Sources */,
+				88083BFF1CA4DEE200FCB6D5 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,8 @@
 			baseConfigurationReference = 164B41D030A7F324600713DA /* Pods-AppHouse-Showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.projectomicron.AppHouse-Showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -463,6 +470,8 @@
 			baseConfigurationReference = 9DBA9E913D61A7B93F613108 /* Pods-AppHouse-Showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.projectomicron.AppHouse-Showcase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
