@@ -46,6 +46,8 @@ class Post {
         
         if let likes = dictionary["likes"] as? Int {
             _likes = likes
+        } else {
+            _likes = 0
         }
         
         if let imageUrl = dictionary["imageUrl"] as? String {

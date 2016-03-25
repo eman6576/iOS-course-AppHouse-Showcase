@@ -33,6 +33,7 @@ class PostCell: UITableViewCell {
         self.post = post
         
         descriptionTextView.text = post.postDescription
+        
         likesLabel.text = "\(post.likes)"
         
         if post.imageUrl != nil {
