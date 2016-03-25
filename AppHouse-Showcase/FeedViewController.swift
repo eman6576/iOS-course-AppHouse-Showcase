@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -104,6 +105,38 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func makePost(sender: UIButton) {
-        
+        if let text = postsDescriptionTextField.text where text != "" {
+            if let image = imageSelectorImageView.image {
+                let urlString = "https://post.imageshack.us/upload_api.php"
+                let url = NSURL(string: urlString)!
+                
+                //Compress the uploaded image
+                let imageData = UIImageJPEGRepresentation(image, 0.2)!
+                let keyData = "12DJKPSU5fc3afbd01b1630cc718cae3043220f3".dataUsingEncoding(NSUTF8StringEncoding)!
+                let keyJSON = "json".dataUsingEncoding(NSUTF8StringEncoding)!
+                
+                Alamofire.upload(.POST, url, multipartFormData: { multipartFormData in
+                    multipartFormData.appendBodyPart(data: imageData, name: "fileupload", fileName: "image", mimeType: "image/jpg")
+                    multipartFormData.appendBodyPart(data: keyData, name: "key")
+                    multipartFormData.appendBodyPart(data: keyJSON, name: "format")
+                    
+                    }, encodingCompletion: { encodingResult in
+                        switch encodingResult {
+                        case .Success(let upload, _, _):
+                            upload.responseJSON(completionHandler: { response in
+                                if let info = response.result.value as? Dictionary<String, AnyObject> {
+                                    if let links = info["links"] as? Dictionary<String, AnyObject> {
+                                        if let imageLink = links["image_link"] as? String {
+                                            print("LINK: \(imageLink)")
+                                        }
+                                    }
+                                }
+                            })
+                        case .Failure(let error):
+                            print(error)
+                        }
+                })
+            }
+        }
     }
 }
