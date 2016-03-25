@@ -13,12 +13,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    static var imageCache = NSCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 358
         
         DataService.dataService.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -53,6 +55,32 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         print(post.postDescription)
         
-        return tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostCell
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+            //Cancel if there is a current request for the old image that came off
+            //the screen
+            cell.request?.cancel()
+            
+            var image: UIImage?
+            
+            if let url = post.imageUrl {
+                image = FeedViewController.imageCache.objectForKey(url) as? UIImage
+            }
+            
+            cell.configureCell(post, image: image)
+            
+            return cell
+        } else {
+            return PostCell()
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let post = posts[indexPath.row]
+        
+        if post.imageUrl == nil {
+            return 200
+        } else {
+            return tableView.estimatedRowHeight
+        }
     }
 }
