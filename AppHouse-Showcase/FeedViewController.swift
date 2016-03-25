@@ -9,18 +9,24 @@
 import UIKit
 import Firebase
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var postsDescriptionTextField: MaterialTextField!
+    @IBOutlet weak var imageSelectorImageView: UIImageView!
     
     var posts = [Post]()
     static var imageCache = NSCache()
+    var imagePicker: UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 358
+        tableView.estimatedRowHeight = 407
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
         DataService.dataService.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             print(snapshot.value)
@@ -82,5 +88,22 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         } else {
             return tableView.estimatedRowHeight
         }
+    }
+    
+    /**
+     This method is depreciated but we are only allowing users to upload photos.
+    **/
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        imageSelectorImageView.image = image
+    }
+    
+    @IBAction func selectImageTapped(sender: UITapGestureRecognizer) {
+        presentViewController(imagePicker, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func makePost(sender: UIButton) {
+        
     }
 }
